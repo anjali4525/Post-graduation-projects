@@ -1,9 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-[Z-Distribution]
+#[Z-Distribution]
+#Part-1: Find (Z<Z0) where Z-value(Z0) is taken as input for Z-Distribution.
 #To import library
 import scipy.stats as stat
 
@@ -16,8 +12,7 @@ print('Probability(Z<Z0) is {:.6f}'.format(prob))
 
 
 *****************************************************************************
-
-
+#Part-2 Find Z-value(Z0) such that P(Z<Z0)=alpha where is taken as input.
 #To import library
 import scipy.stats as stat
 
@@ -31,7 +26,8 @@ print('Z0 value for the given alpha value is {:.6f}'.format(Z0))
 
 
 
-[T-Distribution]
+#[T-Distribution]
+#Part-1: Find P(T<T0) where T0 is taken as input for T-Distribution.
 # To import library
 import scipy.stats as stat
 
@@ -46,7 +42,7 @@ print('Probability(T<T0) is {:.6f}'.format(prob))
 
 ******************************************************************************
 
-
+#Part-2 Find T0 such that P(T<T0)=alpha where alpha and degree of freedom are taken as input.
 # To import library
 import scipy.stats as stat
 
@@ -60,8 +56,8 @@ print('T0 value for the given alpha value and the degree of freedom is  {:.6f}'.
 
 
 
-
-[Chi-square Distribution]
+#[Chi-square Distribution]
+#Part 1: Find P( X^2 <crit_val) where crit_value(critical value) and degree of freedom is taken as input.
 # To import library
 import scipy.stats as stat
 
@@ -75,7 +71,7 @@ print('Probability(X^2 < crit_val) is {:.6f}'.format(prob))
 
 ************************************************************************************
 
-
+#Part-2 Finding Chi-Square critical value s.t. P(X^2 < crit_val)= alpha where value of alpha and degree of freedom is taken as input.
 #To import library
 import scipy.stats as stat
 
@@ -88,7 +84,8 @@ crit_val = stat.chi2.ppf(alpha_chi_sq,dof_chi_sq)
 print('Critical value for the Chi-square is {:.6f}'.format(crit_val))
 
 
-[F-Distribution]
+#[F-Distribution]
+#Part 1: Find P(F<F0) where f-value(F0) and two degree of freedom are taken as input.
 # To import library
 import scipy.stats as stat
 
@@ -104,7 +101,7 @@ print('Probability(F<F0) is {:.6f}'.format(prob))
 
 ***************************************************************************************
 
-
+#Part 2: Find f-value(F0) such that P(F<F0)= alpha where alpha and degree of freedoms are taken as input
 # To import library
 import scipy.stats as stat
 
