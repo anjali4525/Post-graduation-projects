@@ -3,7 +3,7 @@
 
 # In[2]:
 
-
+[Z-Distribution]
 #To import library
 import scipy.stats as stat
 
@@ -15,7 +15,7 @@ prob=stat.norm.cdf(Z0)
 print('Probability(Z<Z0) is {:.6f}'.format(prob))
 
 
-# In[5]:
+*****************************************************************************
 
 
 #To import library
@@ -29,9 +29,9 @@ Z0 = stat.norm.ppf(alpha)
 print('Z0 value for the given alpha value is {:.6f}'.format(Z0))
 
 
-# In[11]:
 
 
+[T-Distribution]
 # To import library
 import scipy.stats as stat
 
@@ -44,7 +44,7 @@ prob=stat.t.cdf(T0,dof_t)
 print('Probability(T<T0) is {:.6f}'.format(prob))
 
 
-# In[9]:
+******************************************************************************
 
 
 # To import library
@@ -59,9 +59,9 @@ T0 = stat.t.ppf(alpha,dof_t)
 print('T0 value for the given alpha value and the degree of freedom is  {:.6f}'.format(T0))
 
 
-# In[10]:
 
 
+[Chi-square Distribution]
 # To import library
 import scipy.stats as stat
 
@@ -73,8 +73,7 @@ dof_chi_sq = float(input("Enter degree of freedom "))
 prob=stat.chi2.cdf(crit_val,dof_chi_sq)
 print('Probability(X^2 < crit_val) is {:.6f}'.format(prob))
 
-
-# In[13]:
+************************************************************************************
 
 
 #To import library
@@ -89,9 +88,7 @@ crit_val = stat.chi2.ppf(alpha_chi_sq,dof_chi_sq)
 print('Critical value for the Chi-square is {:.6f}'.format(crit_val))
 
 
-# In[14]:
-
-
+[F-Distribution]
 # To import library
 import scipy.stats as stat
 
@@ -105,7 +102,7 @@ prob=stat.f.cdf(F0,dof1,dof2)
 print('Probability(F<F0) is {:.6f}'.format(prob))
 
 
-# In[16]:
+***************************************************************************************
 
 
 # To import library
@@ -121,7 +118,7 @@ F0 = stat.f.ppf(alpha,df1,df2)
 print('F0 value for the given alpha value and 2 degree of freedom is {:.6f}'.format(F0))
 
 
-# In[ ]:
+
 
 
 
